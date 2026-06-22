@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balaji MTK - Official App</title>
+    <title>Balaji MTK - App Download</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -28,6 +29,7 @@
             }
         }
     </script>
+
     <style>
         body {
             background-color: #050505;
@@ -101,7 +103,8 @@
         <!-- Logo Section -->
         <div class="mb-6 flex justify-center">
             <!-- 🔴 APNA LOGO YAHA LAGAYE 🔴 -->
-            <img src="balaji.png" alt="Balaji MTK Logo" class="logo-image">
+            <!-- Maine yaha ek fallback image (onerror) lagayi hai taaki jab tak aap apna logo nahi dalte tab tak error na dikhe -->
+            <img src="balaji" alt="Balaji MTK Logo" class="logo-image" onerror="this.src='https://placehold.co/120x120/000000/e5ff00?text=Logo'">
         </div>
 
         <!-- Main Heading -->
@@ -109,21 +112,20 @@
             BALAJI <br class="md:hidden">
             <span class="text-brandYellow">MTK</span>
         </h1>
-        <p class="text-textMuted text-xs md:text-sm tracking-[0.3em] uppercase font-semibold mb-8">
+        <p class="text-textMuted text-xs md:text-sm tracking-[0.3em] uppercase font-semibold mb-8 text-center">
             India's No.1 Matka App
         </p>
 
         <!-- 🔴 APK DOWNLOAD BUTTON 🔴 -->
-        <!-- Yahan 'href' ke andar apne App ka naam daalein jaise "balaji-app.apk" -->
-        <a href="Aapka_App_Ka_Naam.apk" download class="w-full max-w-md bg-gradient-to-r from-[#f0ff44] to-[#ccff00] text-black font-extrabold py-4 px-8 rounded-xl text-lg hover:scale-105 transition-transform duration-300 shadow-glow-yellow mb-4 uppercase tracking-wide text-center flex justify-center items-center gap-3">
-            <i class="fa-solid fa-download text-xl"></i> DOWNLOAD APP
+        <a href="https://balajigame.shop/app/BalajiMatka.apk" download class="w-full max-w-md bg-gradient-to-r from-[#f0ff44] to-[#ccff00] text-black font-extrabold py-4 px-8 rounded-xl text-lg hover:scale-105 transition-transform duration-300 shadow-glow-yellow mb-4 uppercase tracking-wide text-center flex justify-center items-center gap-3">
+            <i class="fa-solid fa-download text-xl"></i> DOWNLOAD APK
         </a>
         
-        <p class="text-gray-400 text-sm mb-6">Trusted by 100K+ Active Users</p>
+        <p class="text-gray-400 text-sm mb-6 text-center">Trusted by 100K+ Active Users</p>
 
         <!-- Countdown Timer -->
         <div class="bg-black/50 border border-white/5 rounded-full px-6 py-2 mb-10 flex items-center gap-2 backdrop-blur-sm">
-            <span class="text-gray-400 text-sm font-semibold tracking-wider">OFFER ENDS IN:</span>
+            <span class="text-gray-400 text-sm font-semibold tracking-wider">ENDS IN:</span>
             <span class="text-red-500 font-bold text-sm tracking-widest" id="countdown">14:59</span>
         </div>
 
@@ -131,21 +133,21 @@
         <div class="grid grid-cols-3 gap-3 md:gap-6 w-full max-w-2xl mb-8">
             <!-- Card 1 -->
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center transition-colors hover:border-brandYellow/50">
-                <i class="fa-solid fa-shield-halved text-brandYellow text-xl md:text-2xl mb-2"></i>
+                <i class="fa-solid fa-check text-brandYellow text-xl md:text-2xl mb-2"></i>
                 <h3 class="text-white font-bold text-lg md:text-xl">100%</h3>
-                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Secure</p>
+                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Accuracy</p>
             </div>
             <!-- Card 2 -->
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center transition-colors hover:border-brandYellow/50">
                 <i class="fa-regular fa-star text-brandYellow text-xl md:text-2xl mb-2"></i>
                 <h3 class="text-white font-bold text-lg md:text-xl">100K+</h3>
-                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Downloads</p>
+                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Members</p>
             </div>
             <!-- Card 3 -->
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center transition-colors hover:border-brandYellow/50">
-                <i class="fa-solid fa-bolt text-brandYellow text-xl md:text-2xl mb-2"></i>
-                <h3 class="text-white font-bold text-lg md:text-xl">Fast</h3>
-                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Withdrawal</p>
+                <i class="fa-solid fa-gem text-brandYellow text-xl md:text-2xl mb-2"></i>
+                <h3 class="text-white font-bold text-lg md:text-xl">24/7</h3>
+                <p class="text-gray-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">Support</p>
             </div>
         </div>
 
@@ -153,9 +155,9 @@
         <div class="flex items-center justify-center gap-4 md:gap-8 text-sm text-gray-400 mb-8">
             <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandYellow"></i> Verified</div>
             <span class="text-gray-700">•</span>
-            <div>Safe & Secure</div>
+            <div>Secure</div>
             <span class="text-gray-700">•</span>
-            <div class="flex items-center gap-2"><i class="fa-solid fa-headset text-brandYellow"></i> 24/7 Support</div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-bolt text-brandYellow"></i> Instant</div>
         </div>
 
     </div>
@@ -173,7 +175,9 @@
             seconds = seconds < 10 ? '0' + seconds : seconds;
             let displayMinutes = minutes < 10 ? '0' + minutes : minutes;
 
-            countdownEl.innerHTML = `${displayMinutes}:${seconds}`;
+            if(countdownEl) {
+                countdownEl.innerHTML = `${displayMinutes}:${seconds}`;
+            }
 
             if (timeInSeconds > 0) {
                 timeInSeconds--;
