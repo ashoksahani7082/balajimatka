@@ -24,6 +24,7 @@
                     },
                     boxShadow: {
                         'glow-yellow': '0 0 30px rgba(229, 255, 0, 0.3)',
+                        'logo-glow': '0 0 25px rgba(229, 255, 0, 0.4)',
                     }
                 }
             }
@@ -61,15 +62,19 @@
             border-radius: 50%;
             pointer-events: none;
         }
-        /* Image Logo CSS */
+        /* Image Logo Style */
         .logo-image {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             border: 3px solid #e5ff00;
             object-fit: cover;
             background: #000;
-            box-shadow: 0 0 20px rgba(229, 255, 0, 0.2);
+            box-shadow: 0 0 30px rgba(229, 255, 0, 0.45);
+            transition: transform 0.3s ease;
+        }
+        .logo-image:hover {
+            transform: scale(1.05);
         }
     </style>
 
@@ -100,11 +105,9 @@
 
     <div class="max-w-4xl mx-auto px-4 py-12 flex flex-col items-center">
         
-        <!-- Logo Section -->
+        <!-- Logo Section with New Premium Golden 'B' Logo -->
         <div class="mb-6 flex justify-center">
-            <!-- 🔴 APNA LOGO YAHA LAGAYE 🔴 -->
-            <!-- Maine yaha ek fallback image (onerror) lagayi hai taaki jab tak aap apna logo nahi dalte tab tak error na dikhe -->
-            <img src="balaji" alt="Balaji MTK Logo" class="logo-image" onerror="this.src='https://placehold.co/120x120/000000/e5ff00?text=Logo'">
+            <img src="watermarked_img_1819214572267359626.png" alt="Balaji MTK Logo" class="logo-image" onerror="this.src='https://placehold.co/140x140/000000/e5ff00?text=Balaji'">
         </div>
 
         <!-- Main Heading -->
